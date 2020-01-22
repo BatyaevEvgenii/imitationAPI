@@ -18,12 +18,12 @@ if __name__ == '__main__':
 '''
 django-admin startproject imitation
 
-создадим виртуальное окружение
+создадим виртуальное окружение или воспользуемся ранее созданным
 python3 -m venv i_api
-и запустим его
+запустим его
 source i_api/bin/activate
 
-создадим БД по умолчанию
+создадим БД по умолчанию(sqlite)
 python manage.py migrate
 
 запускаем сервер
@@ -47,7 +47,8 @@ python manage.py createsuperuser
 imitation/imitation
 http://127.0.0.1:8000/admin/login/
 
-
-
+Приступаем к созданию API
+views.py
+urls.py
 
 '''
