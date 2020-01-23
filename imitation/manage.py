@@ -50,5 +50,7 @@ http://127.0.0.1:8000/admin/login/
 Приступаем к созданию API
 views.py
 urls.py
+serilializer
 
+Для тестирования API воспользуемся POSTMAN'ом
 '''
