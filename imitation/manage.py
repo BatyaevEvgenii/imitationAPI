@@ -53,4 +53,10 @@ urls.py
 serilializer
 
 Для тестирования API воспользуемся POSTMAN'ом
+
+
+pip3 install -r requirements.txt
+
+source ~/venv/bin/activate
+
 '''

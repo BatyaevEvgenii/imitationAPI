@@ -1,10 +1,13 @@
 from django.urls import path
+from rest_framework.urlpatterns import format_suffix_patterns
 
-from .views import ArticleView
+from .views import ArticleList, ArticleDetail
 
 app_name = "articles"
 
 urlpatterns = [
-    path('articles/', ArticleView.as_view()),
-    path('articles/<int:pk>', ArticleView.as_view()),
+    path('articles/', ArticleList.as_view()),
+    path('articles/<int:pk>', ArticleDetail.as_view()),
 ]
+
+urlpatterns = format_suffix_patterns(urlpatterns)
